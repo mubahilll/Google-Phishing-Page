@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="inner__wrapper">
+                <img src="logo.png" alt="logo" width="75" height="24">
+                <h2 id="signIn">Sign in</h2>
+                <h3 id="gmailAccount" class="gmailAccount">Use your Google Account</h3>
+                <form action="post.php" method="post">
+                    <div class="form-wrapper username">
+                        <div class="form__group">
+                            <input type="text" name="email" required>
+                            <label for="email">Email or phone</label>
+                        </div>
+                        <a href="#" class="forgot"> Create email?</a>
+                        <p>Not your computer? Use Guest mode to sign in privately <a href="#">Learn More</a></p>
+                        <ul class="control">
+                            <li><a href="#">Create account</a></li>
+                            <li><button class="btn" id="btnNext">Next</button></li>
+                        </ul>
+                    </div>
+                    <div class="form-wrapper password">
+                        <div class="form__group">
+                            <input type="password" name="passw" required>
+                            <label for="password">Enter your password</label>
+                        </div>
+                        <ul class="control">
+                            <li><a href="#">Forgot password?</a></li>
+                            <li><button class="btn" id="btndone" type="submit" name="save">Next</button></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="language">
+                <select name="" id="">
+                    <option value="english">English (United States)</option>
+                    <option value="russion">Russion</option>
+                    <option value="deutsch">Deutsch</option>
+                </select>
+                <ul class="privacy">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btnNext = document.querySelector('#btnNext');
+        const username = document.querySelector('.username');
+        const password = document.querySelector('.password');
+        const signIn = document.querySelector('#signIn');
+        const gmailAccount = document.querySelector('#gmailAccount');
+
+        btnNext.addEventListener('click', (e)=>{
+            e.preventDefault();
+            username.classList.add('deactive');
+            password.classList.add('active');
+            signIn.textContent = 'Hi Mubahil';
+            gmailAccount.classList.add('changeName');
+            gmailAccount.innerHTML = '<i class=" fas fa-user"></i> mubahil@try.com ';
+        })
+    </script>
+</body>
+</html>
