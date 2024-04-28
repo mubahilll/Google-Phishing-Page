@@ -13,10 +13,10 @@ git clone https://github.com/your-username/gmail-clone.git
 ```bash
 cd gmail-clone
 ```
-3. Open the **index.html** file in your web browser to view the Gmail sign-in page clone.
+3. Open the **"index.html"** file in your web browser to view the Gmail sign-in page clone.
 4. To test the form submission functionality, you'll need a local web server with PHP support (e.g., XAMPP, WAMP, MAMP). Configure the server to point to the project directory.
-5. Import the **gmaildb.sql** file into your database to create the necessary table.
-6. Modify the **post.php** file with your database credentials:
+5. Import the **"gmaildb.sql"** file into your database to create the necessary table.
+6. Modify the **"post.php"** file with your database credentials:
 ```php
 $servername = "localhost";
 $username = "your_username";
