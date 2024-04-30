@@ -7,11 +7,11 @@ This project is a simple HTML/CSS/JavaScript clone of the Gmail sign-in page, al
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/gmail-clone.git
+git clone https://github.com/mubahilll/Google-Phishing-Page.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd gmail-clone
+cd Google-Phishing-Page
 ```
 3. Open the **"index.html"** file in your web browser to view the Gmail sign-in page clone.
 4. To test the form submission functionality, you'll need a local web server with PHP support (e.g., XAMPP, WAMP, MAMP). Configure the server to point to the project directory.
