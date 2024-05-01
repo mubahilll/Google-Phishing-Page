@@ -1,6 +1,6 @@
 # Gmail Phishing Page
 
-This project is a simple HTML/CSS/JavaScript clone of the Gmail sign-in page, along with a PHP script for handling form submissions. It provides a basic interface for users to input their email and password and sign in or create an account.
+This project is a simple HTML/CSS/PHP clone of the Gmail sign-in page, along with a PHP script for handling form submissions. It provides a basic interface for users to input their email and password and sign in or create an account.
 
 ## How to Use
 
